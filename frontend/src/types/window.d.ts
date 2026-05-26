@@ -14,6 +14,7 @@ declare global {
           amount: number;
           memo: string;
           metadata: Record<string, unknown>;
+          tokenCanonical?: string;
         },
         callbacks: {
           onReadyForServerApproval: (paymentId: string) => void;
