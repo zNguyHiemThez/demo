@@ -87,7 +87,7 @@ const ProductCard = ({
       <div style={priceSectionStyle}>
         <div style={paymentActionsStyle}>
           <div style={paymentOptionStyle}>
-            <strong>{price} Test-π</strong>
+            <strong>{price} Test-Pi</strong>
             <button onClick={onClickBuyWithPi} disabled={disabled}>
               Pay with Pi
             </button>
@@ -97,9 +97,7 @@ const ProductCard = ({
             <button onClick={onClickBuyWithIrra} disabled={disabled}>
               Pay with IRRA
             </button>
-            <p style={irraCaptionStyle}>
-              IRRA prices don't follow actual price, it's set for demo purpose
-            </p>
+            <p style={irraCaptionStyle}>IRRA prices don't follow actual price, it's set for demo purpose</p>
           </div>
         </div>
       </div>
