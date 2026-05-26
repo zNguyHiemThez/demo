@@ -41,19 +41,19 @@ const priceSectionStyle: CSSProperties = {
   marginBottom: 8,
 };
 
-const paymentActionsStyle: CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  gap: 8,
-  marginTop: 8,
-};
-
-const irraSectionStyle: CSSProperties = {
+const paymentOptionStyle: CSSProperties = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   gap: 4,
+};
+
+const paymentActionsStyle: CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  gap: 12,
+  marginTop: 8,
 };
 
 const irraCaptionStyle: CSSProperties = {
@@ -85,12 +85,15 @@ const ProductCard = ({
       </div>
 
       <div style={priceSectionStyle}>
-        <strong>{price} Test-π</strong>
         <div style={paymentActionsStyle}>
-          <button onClick={onClickBuyWithPi} disabled={disabled}>
-            Pay with Pi
-          </button>
-          <div style={irraSectionStyle}>
+          <div style={paymentOptionStyle}>
+            <strong>{price} Test-π</strong>
+            <button onClick={onClickBuyWithPi} disabled={disabled}>
+              Pay with Pi
+            </button>
+          </div>
+          <div style={paymentOptionStyle}>
+            <strong>{price} IRRA</strong>
             <button onClick={onClickBuyWithIrra} disabled={disabled}>
               Pay with IRRA
             </button>
